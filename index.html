@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="listagem de personagens da SWAPI (Star Wars API)">
+    <meta name="keywords" content="Star Wars, API, JavaScript">
+    <title>Star Wars - Listagem de Personagens</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>personagens</li>
+                <li><a href="films.html">filmes</a></li>
+                <li><a href="planets.html">planetas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="person-section">
+            <h1  class="main-title">Personagens</h1>
+            <select id="gender-select" class="gender-select">
+                Carregando gêneros...
+            </select>
+            <ul class="person-list" id="person-list">Carregando personagens...</ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/giovana-castro-496562238/" target="_blank" rel="noopener noreferrer">Giovana Castro</a></p>
+    </footer>
+    <script src="assets/js/api/api-main.js"></script>
+</body>
+
+</html>

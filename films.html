@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="listagem de filmes da SWAPI (Star Wars API)">
+    <meta name="keywords" content="Star Wars, API, JavaScript">
+    <title>Star Wars - Listagem de Filmes</title>
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">personagens</a></li>
+                <li><a href="#">filmes</a></li>
+                <li><a href="planets.html">planetas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="films-section">
+            <h1 class="main-title">Filmes</h1>
+            <h4 class="title-select">Ordenar por</h4>
+            <select id="order-select" class="select">
+                <option value="release">Lançamento</option>
+                <option value="episode">Ordem Cronológica</option>
+            </select>
+
+            <select id="person-select" class="select">
+                Carregando personagens...
+            </select>
+
+            <ul class="films-list" id="films-list">Carregando filmes...</ul>
+        </section>
+    </main>
+
+    <script src="assets/js/api/api-films.js"></script>
+</body>
+
+</html>
