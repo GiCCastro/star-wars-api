@@ -7,7 +7,7 @@
     gap: 5rem;
 }
 
-li{
+.person-list li{
     display: flex;
     justify-content: center;
 }
