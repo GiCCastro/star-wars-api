@@ -26,13 +26,15 @@ function updatePerson(personData) {
 
         cardPerson.innerHTML = filterGender.map((person, index) => {
             return `
-            <li class="person-search">
-            <div class="person">
-                <h2>${person.name}</h2>
-                <p>Gênero: ${person.gender}</p>
-                <p>Altura: ${person.height}</p>
-                <p>Peso: ${person.mass}</p>
-                <a href="details.html?id=${index + 1}"><button class="link-product">Ver personagem</button></a>
+            <li class="person">
+            <div class="card-person">
+                <h2 class="name-person">${person.name}</h2>
+                <div class="info-person">
+                    <p>Gênero: ${person.gender}</p>
+                    <p>Altura: ${person.height} cm</p>
+                    <p>Peso: ${person.mass} cm</p>
+                </div>
+                <a href="details.html?id=${index + 1}"><button class="link-person">Ver personagem</button></a>
             </div>
         </li>
             `
@@ -41,12 +43,14 @@ function updatePerson(personData) {
 
     cardPerson.innerHTML = personData.map((person, index) => {
         return `
-          <li class="person-search">
-            <div class="person">
-                <h2>${person.name}</h2>
-                <p>Altura: ${person.height}</p>
-                <p>Peso: ${person.mass}</p>
-                <a href="details.html?id=${index + 1}"><button class="link-product">Ver personagem</button></a>
+          <li class="person">
+            <div class="card-person">
+                <h2 class="name-person">${person.name}</h2>
+                <div class="info-person">
+                    <p>Altura: ${person.height} cm</p>
+                    <p>Peso: ${person.mass} cm</p>
+                </div> 
+                <a href="details.html?id=${index + 1}"><button class="link-person">Ver personagem</button></a>
             </div>
         </li>
         `;
