@@ -7,7 +7,10 @@
     <meta name="description" content="detalhamento do personagem selecionado da SWAPI (Star Wars API)">
     <meta name="keywords" content="Star Wars, API, JavaScript">
     <title>Star Wars - Detalhes do Personagem</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/global.css">
 
 </head>
 
@@ -28,14 +31,19 @@
 
     <main>
         <section class="person-details-section">
-            <ul class="person-details" id="person-details">Carregando detalhes...</ul>
+            <ul class="person-details" id="person-details"><span class="loading">Carregando detalhes...</span></ul>
         </section>
     </main>
 
     <footer>
+        <div class="arrow-navigation">
+            <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
         <hr>
-        <p>Desenvolvido por <a href="https://www.linkedin.com/in/giovana-castro-496562238/" target="_blank"
-                rel="noopener noreferrer">Giovana Castro</a></p>
+        <div class="link-linkedin">
+            <p>Desenvolvido por <a href="https://www.linkedin.com/in/giovana-castro-496562238/" target="_blank"
+                    rel="noopener noreferrer">Giovana Castro</a></p>
+        </div>
     </footer>
     <script src="assets/js/api/api-details.js"></script>
 </body>

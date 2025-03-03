@@ -7,12 +7,16 @@
     <meta name="description" content="listagem de personagens da SWAPI (Star Wars API)">
     <meta name="keywords" content="Star Wars, API, JavaScript">
     <title>Star Wars - Listagem de Personagens</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <header>
+        <header id="header">
             <div class="logo">
                 <img src="assets/images/logo.png" alt="logo Star Wars">
             </div>
@@ -27,18 +31,30 @@
 
         <main>
             <section class="person-section">
-                <h1 class="main-title">Personagens</h1>
-                <select id="gender-select" class="gender-select">
-                    Carregando gêneros...
-                </select>
-                <ul class="person-list" id="person-list">Carregando personagens...</ul>
+                <article class="select-article">
+                    <h1 class="main-title">Personagens</h1>
+                    <select id="gender-select" class="gender-select">
+                        <option value="release">selecione um gênero</option>
+                    </select>
+
+                </article>
+
+                <article class="person-list-article">
+                    <ul class="person-list" id="person-list"><span class="loading">Carregando personagens...</span></ul>
+                </article>
+
             </section>
         </main>
 
         <footer>
+            <div class="arrow-navigation">
+                <a href="#header"><i class="fa-solid fa-chevron-up"></i></a>
+            </div>
             <hr>
-            <p>Desenvolvido por <a href="https://www.linkedin.com/in/giovana-castro-496562238/" target="_blank"
-                    rel="noopener noreferrer">Giovana Castro</a></p>
+            <div class="link-linkedin">
+                <p>Desenvolvido por <a href="https://www.linkedin.com/in/giovana-castro-496562238/" target="_blank"
+                        rel="noopener noreferrer">Giovana Castro</a></p>
+            </div>
         </footer>
     </div>
     <script src="assets/js/api/api-main.js"></script>

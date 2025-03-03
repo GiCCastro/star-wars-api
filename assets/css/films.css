@@ -1,0 +1,10 @@
+.filters{
+    display: flex;
+    gap: 2rem;
+}
+
+.order-by{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
