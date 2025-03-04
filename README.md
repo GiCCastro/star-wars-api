@@ -69,6 +69,7 @@ swapi-explorer/
 │   │   │   ├── api-main.js
 │   │   │   └── api-planets.js
 └── README.md
+```
 
 ### Conclusão
 
