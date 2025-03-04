@@ -4,6 +4,11 @@
     gap: 5rem;
 }
 
+.planets-list-article h1{
+    text-align: center;
+    margin-top: 5rem;
+}
+
 .card-planet{
     display: flex;
     flex-direction: column;
