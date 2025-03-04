@@ -47,3 +47,19 @@
 .card-person .link-person:hover{
     background-color: rgba(255, 232, 31, 0.25);
 }
+
+@media(max-width: 450px){
+    .person-section .select-article {
+        flex-direction: column ;
+        gap: 2rem;
+        padding: 0 1rem;
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 350px){
+    .select-article {
+        padding: 0 1rem;
+    }
+
+}
