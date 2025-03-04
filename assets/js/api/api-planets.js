@@ -8,7 +8,8 @@ function updatePlanets(planetsData) {
           <li>
             <div class="card-planet">
             <img width="64" height="64" src="https://img.icons8.com/ios-glyphs/64/ffffff/death-star.png" alt="death-star"/>
-                <h2>${planet.name}</h2>
+                
+            <h2>${planet.name}</h2>
                 <div class="info-planet">
                 <p>População: ${planet.population}</p>
                 <p>Clima: ${planet.climate}</p>

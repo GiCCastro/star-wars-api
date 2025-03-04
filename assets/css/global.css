@@ -116,6 +116,7 @@ footer {
     align-items: center;
     position: fixed;
     background-color: #FFE81F;
+    color: #1C1C1C;
     bottom: 4.75rem;
     right: 0;
     margin-right: 1rem;
@@ -128,10 +129,6 @@ footer {
 
 .arrow-navigation:hover{
     background-color: #f1f1f1;
-}
-
-.arrow-navigation a {
-    color: #1C1C1C;
 }
 
 .arrow-navigation i {
