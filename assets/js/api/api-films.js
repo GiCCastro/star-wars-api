@@ -49,6 +49,7 @@ async function updateFilms(filmsData) {
             return `
             <li>
                 <div class="card-film">
+                    <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/ffffff/rebel.png" alt="rebel"/>
                     <h2 class="title-film">${film.title}</h2>
                     <div class="info-main">
                         <p>Episódio: ${film.episode_id}</p>

@@ -28,6 +28,7 @@ function updatePerson(personData) {
             return `
             <li class="person">
             <div class="card-person">
+            <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/ffffff/r2-d2.png" alt="r2-d2"/>
                 <h2 class="name-person">${person.name}</h2>
                 <div class="info-person">
                     <p>Gênero: ${person.gender}</p>
@@ -45,6 +46,7 @@ function updatePerson(personData) {
         return `
           <li class="person">
             <div class="card-person">
+                <img width="64" height="64" src="https://img.icons8.com/sf-black-filled/64/ffffff/r2-d2.png" alt="r2-d2"/>
                 <h2 class="name-person">${person.name}</h2>
                 <div class="info-person">
                     <p>Altura: ${person.height} cm</p>
