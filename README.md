@@ -44,7 +44,7 @@ Bem-vindo ao SWAPI Explorer! Esta aplicação permite explorar personagens, plan
 
 ### Estrutura do projeto
 
-\```bash
+
      swapi-explorer/
 ├── index.html
 ├── details.html
