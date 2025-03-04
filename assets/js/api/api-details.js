@@ -13,7 +13,7 @@ function updatePerson(personDetails) {
 
     person.innerHTML =
         `   <div class="card-details">
-                <h1  class="main-title">${personDetails.name}</h1>
+                <h1  class="person-title">${personDetails.name}</h1>
                 <div class="container-details">
                     <div class="info-details">
                         <p>Altura: ${personDetails.height}</p>

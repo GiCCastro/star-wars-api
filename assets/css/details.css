@@ -18,6 +18,10 @@
     border-radius: 1rem;
 }
 
+.card-details .person-title{
+    font-size: 2rem;
+}
+
 .card-details .container-details {
     display: flex;
     flex-wrap: wrap;
