@@ -53,7 +53,12 @@
         flex-direction: column ;
         gap: 2rem;
         padding: 0 1rem;
-        background-color: aqua;
+    }
+}
+
+@media(max-width: 400px){
+    .card-person{
+        width: 300px;
     }
 }
 
@@ -62,4 +67,16 @@
         padding: 0 1rem;
     }
 
+}
+
+@media(max-width: 300px){
+    .card-person{
+        width: 200px;
+    }
+}
+
+@media(max-width: 200px){
+    .card-person{
+        width: 150px;
+    }
 }

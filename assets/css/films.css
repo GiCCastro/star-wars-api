@@ -52,6 +52,12 @@
     gap: 0.5rem;
 }
 
+@media(max-width: 950px){
+    .card-film {
+        width: 90%;
+    }
+}
+
 @media(max-width: 680px) {
     .films-section .select-article {
         flex-direction: column;

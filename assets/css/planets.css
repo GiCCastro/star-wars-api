@@ -1,15 +1,15 @@
-.planets-section .planets-list{
+.planets-section .planets-list {
     flex-wrap: wrap;
     margin: 5rem 0;
     gap: 5rem;
 }
 
-.planets-list-article h1{
+.planets-list-article h1 {
     text-align: center;
     margin-top: 5rem;
 }
 
-.card-planet{
+.card-planet {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,8 +22,26 @@
     border-radius: 1rem;
 }
 
-.card-planet .info-planet{
+.card-planet .info-planet {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+}
+
+@media (max-width: 450px) {
+    .card-planet {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    .card-planet {
+        width: 250px;
+    }
+}
+
+@media (max-width: 250px) {
+    .card-planet {
+        width: 150px;
+    }
 }

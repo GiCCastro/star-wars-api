@@ -16,7 +16,7 @@ body {
     overflow-x: hidden;
 }
 
-a{
+a {
     color: #fff;
     transition: all .3s;
 }
@@ -94,8 +94,7 @@ section select option {
 section .person-list,
 section .person-details,
 section .films-list,
-section .planets-list
-{
+section .planets-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +103,7 @@ section .planets-list
 section .loading {
     font-family: 'Star Wars', sans-serif;
     font-size: 2rem;
+    text-align: center;
     margin-top: 10rem;
 }
 
@@ -128,7 +128,7 @@ footer {
     cursor: pointer;
 }
 
-.arrow-navigation:hover{
+.arrow-navigation:hover {
     background-color: #f1f1f1;
     color: #1C1C1C;
 }
@@ -150,11 +150,25 @@ footer {
 }
 
 @media (max-width: 400px) {
+    .logo img{
+        width: 150px;
+    }
+
     .navbar .nav-list {
         flex-direction: column;
     }
 
     section .select-article {
         margin-top: 3.5rem;
+    }
+
+    section select {
+        padding: 0.25rem;
+    }
+}
+
+@media (max-width: 350px){
+    section .loading {
+        font-size: 1rem;
     }
 }
