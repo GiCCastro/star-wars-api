@@ -1,3 +1,47 @@
+.films-section .films-list{
+    flex-direction: column;
+    margin: 5rem 0;
+    gap: 5rem;
+
+}
+
+.films-list li{
+    display: flex;
+    justify-content: center;
+}
+
+.card-film{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.card-film .info-main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card-film .title-film,
+.card-film .opening_crawl,
+.card-film .title-character{
+    color: #FFE81F;
+}
+
+.card-film .opening_crawl,
+.card-film .title-character{
+    color: #FFE81F;
+    margin-bottom: 1rem;
+}
+
 .filters{
     display: flex;
     gap: 2rem;
