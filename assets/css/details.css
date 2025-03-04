@@ -1,0 +1,66 @@
+.person-details-section .person-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.person-details .card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.card-details .container-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem ;
+}
+
+.card-details .info-details,
+.card-details .list-films {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+}
+
+.card-details .info-details{
+    gap: 0.5rem;
+}
+
+.card-details .list-films{
+    gap: 2rem;
+}
+
+.list-films .title{
+    color: #FFE81F;
+}
+
+.list-films .film h4{
+    margin-bottom: .5rem;
+}
+
+.card-details .hr{
+    width: 100%;
+}
+
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.footer-details a{
+    text-decoration: underline;
+}

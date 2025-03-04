@@ -12,27 +12,31 @@ function updatePerson(personDetails) {
     const person = document.getElementById('person-details');
 
     person.innerHTML =
-        `
-          <li>
-            <div class="card-person">
+        `   <div class="card-details">
                 <h1  class="main-title">${personDetails.name}</h1>
-                <p>Altura: ${personDetails.height}</p>
-                <p>Cor do cabelo: ${personDetails.hair_color}</p>
-                <p>Cor da pele: ${personDetails.skin_color}</p>
-                <p>Cor dos olhos: ${personDetails.eye_color}</p>
-                <p>Ano de nascimento: ${personDetails.birth_year}</p>
-                <p>Gênero: ${personDetails.gender}</p>
-                <p><span id="homeworld">Carregando planeta natal...</span></p>
-                <p><span id="species">Carregando espécies...</span></p>
-                <p><span id="vehicles">Carregando veículos...</span></p>
-                <p><span id="starships">Carregando naves espaciais...</span></p>
-                <ul id="films">Carregando filmes...</ul>
-                <hr>
-                <p>Criado em: ${formatDateTime(personDetails.created)}</p>
-                <p>Última edição: ${formatDateTime(personDetails.edited)}</p>
-                <a href="${personDetails.url}" target="_blank">Ver na API</a>    
-            </div>
-        </li>
+                <div class="container-details">
+                    <div class="info-details">
+                        <p>Altura: ${personDetails.height}</p>
+                        <p>Cor do cabelo: ${personDetails.hair_color}</p>
+                        <p>Cor da pele: ${personDetails.skin_color}</p>
+                        <p>Cor dos olhos: ${personDetails.eye_color}</p>
+                        <p>Ano de nascimento: ${personDetails.birth_year}</p>
+                        <p>Gênero: ${personDetails.gender}</p>
+                        <p><span id="homeworld">Carregando planeta natal...</span></p>
+                        <p><span id="species">Carregando espécies...</span></p>
+                        <p><span id="vehicles">Carregando veículos...</span></p>
+                        <p><span id="starships">Carregando naves espaciais...</span></p>
+                    </div>
+                    
+                    <ul class="list-films" id="list-films">Carregando filmes...</ul>
+                </div>
+                <hr class="hr">
+                <div class="footer-details">
+                    <p>Criado em: ${formatDateTime(personDetails.created)}</p>
+                    <p>Última edição: ${formatDateTime(personDetails.edited)}</p>
+                    <a href="${personDetails.url}" target="_blank">Ver na API</a> 
+                </div
+            </div>   
         `;
 
     fetch(personDetails.homeworld)
@@ -42,7 +46,7 @@ function updatePerson(personDetails) {
 
     Promise.all(personDetails.films.map(film => fetch(film).then(response => response.json())))
         .then(films => {
-            document.getElementById('films').innerHTML = `<h3>Filmes:</h3>` + films.map(film => {
+            document.getElementById('list-films').innerHTML = `<h3 class="title">Filmes:</h3>` + films.map(film => {
                 return `
             <li>
                 <div class="film">
@@ -54,7 +58,7 @@ function updatePerson(personDetails) {
                 `;
             }).join('');
         })
-        .catch(() => document.getElementById('films').textContent = `Filmes: desconhecidos`);
+        .catch(() => document.getElementById('list-films').textContent = `Filmes: desconhecidos`);
 
     Promise.all(personDetails.species.map(specie => fetch(specie).then(response => response.json())))
         .then(species => {

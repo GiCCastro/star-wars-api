@@ -15,9 +15,16 @@ body {
     background-color: #1C1C1C;
     color: #fff;
     overflow-x: hidden;
-
 }
 
+a{
+    color: #fff;
+    transition: all .3s;
+}
+
+a:hover {
+    color: #FFE81F;
+}
 
 header {
     display: flex;
@@ -38,7 +45,6 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
     width: 100%;
 }
 
@@ -50,13 +56,9 @@ header {
 .navbar .nav-list li a {
     font-size: 1rem;
     text-transform: uppercase;
-    color: #fff;
-    transition: all .3s;
 }
 
-.navbar .nav-list li a:hover {
-    color: #FFE81F;
-}
+
 
 main {
     min-height: 100vh;
@@ -93,7 +95,11 @@ section select option {
     color: #1C1C1C;
 }
 
-section ul{
+section .person-list,
+section .person-details,
+section .films-list,
+section .planets-list
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,5 +151,4 @@ footer {
 
 .link-linkedin a {
     text-decoration: underline;
-    color: #fff;
 }
