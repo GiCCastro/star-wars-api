@@ -44,7 +44,7 @@ Bem-vindo ao SWAPI Explorer! Esta aplicação permite explorar personagens, plan
 
 ### Estrutura do projeto
 
-\```markdown
+```bash
 swapi-explorer/
 ├── index.html
 ├── details.html
@@ -69,7 +69,6 @@ swapi-explorer/
 │   │   │   ├── api-main.js
 │   │   │   └── api-planets.js
 └── README.md
-\```
 
 ### Conclusão
 
