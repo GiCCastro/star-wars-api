@@ -44,8 +44,8 @@ Bem-vindo ao SWAPI Explorer! Esta aplicação permite explorar personagens, plan
 
 ### Estrutura do projeto
 
-
-     swapi-explorer/
+\```markdown
+swapi-explorer/
 ├── index.html
 ├── details.html
 ├── films.html
