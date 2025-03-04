@@ -36,7 +36,7 @@ async function updateFilms(filmsData) {
     const listUniquePerson = new Set(characters);
     const listUniqueEndPerson = Array.from(listUniquePerson).sort((a, b) => a.localeCompare(b)); 
 
-    personSelect.innerHTML = `<option value="">Carregando personagens...</option>`;
+    personSelect.innerHTML = `<option value="">Selecione um personagem</option>`;
 
     const characterNames = await Promise.all(listUniqueEndPerson.map(url => getCharacterName(url)));
 
@@ -50,15 +50,19 @@ async function updateFilms(filmsData) {
             <li>
                 <div class="card-film">
                     <h2 class="title-film">${film.title}</h2>
-                    <p>Episódio: ${film.episode_id}</p>
-                    <p>Diretor: ${film.director}</p>
-                    <p>Produtor: ${film.producer}</p>
-                    <p>Lançamento: ${formatDateTime(film.release_date)}</p>
+                    <div class="info-main">
+                        <p>Episódio: ${film.episode_id}</p>
+                        <p>Diretor: ${film.director}</p>
+                        <p>Produtor: ${film.producer}</p>
+                        <p>Lançamento: ${formatDateTime(film.release_date)}</p>
+                    </div>
                     <div class="opening-crawl">
-                        <h3>Texto de Abertura:</h3>
+                        <h3 class="opening_crawl">Texto de Abertura:</h3>
                         <p>${film.opening_crawl}</p>
                     </div>
+                    <div class="person">
                     <p><span id="characters-${index}">Carregando personagens...</span></p>
+                    </div>
                 </div>
             </li>
             `;
@@ -70,7 +74,7 @@ async function updateFilms(filmsData) {
             ))
                 .then(characters => {
                     document.getElementById(`characters-${index}`).innerHTML = characters.length
-                        ? `Personagens:<br>` + characters.map(character => character.name).join("<br>")
+                        ? `<h3 class="title-character">Personagens:<br></h3>` + characters.map(character => character.name).join("<br>")
                         : `Personagens: desconhecidos`;
                 })
                 .catch(() => {
